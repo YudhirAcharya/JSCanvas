@@ -3,7 +3,7 @@
     sans-serif;
   --darkColor: black;
   --lightClolor: whitesmoke;
-  --accentColor: rgb(10, 10, 56);
+  --accentColor: rgba(10, 10, 56, 0.658);
 }
 * {
   margin: 0;
@@ -44,4 +44,33 @@ main {
   transform: translate(-50%, -50%);
   display: flex;
   z-index: 1;
+}
+.gameUI {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--accentColor);
+  display: flex;
+
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.gameUI * {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#gameStartDiv {
+  display: flex;
+}
+#gameEndDiv {
+  display: none;
+}
+#gameStartBtn {
+  padding: 10px;
+  font-family: inherit;
+  font-size: larger;
 }
